@@ -68,6 +68,7 @@ angular.module('myApp.Search', ['chieffancypants.loadingBar','ui-rangeSlider','n
                 }).success(function(data, status, headers, config) {
                     $scope.items = data.data;
                     //Data Nullability Test
+                    console.log(data);
                     if($scope.items == ""){
                         $scope.EmptyResult="I'm sorry we didn't find teacher.";
                     }
