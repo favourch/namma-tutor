@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Affix</title>
+  <link rel="stylesheet" href="../../../dist/css/bootstrap.min.css">
+
+  <style>
+    /* Test Styles */
+    .affixed-element-top.affix {
+      top: 10px;
+    }
+    .affixed-element-top.affix-bottom {
+      position: absolute;
+    }
+    .affixed-element-bottom {
+      margin-bottom: 0;
+    }
+    .affixed-element-bottom.affix {
+      bottom: 10px;
+    }
+    .affixed-element-bottom.affix-bottom {
+      position: relative;
+    }
+    .grow-btn, .shrink-btn {
+      color: #FFF;
+    }
+    .grow-btn {
+      background-color: #2ECC40;
+    }
+    .grow-btn:hover {
+      background-color: #3D9970;
+    }
+    .shrink-btn {
+      background-color: #FF4136;
+    }
+    .shrink-btn:hover {
+      background-color: #85144B;
+    }
+  </style>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+<div class="container">
+
+  <div class="page-header js-page-header">
+    <h1>Affix <small>Bootstrap Visual Test</small></h1>
+  </div>
+
+  <div class="col-md-3">
+    <ul class="list-group affixed-element-top js-affixed-element-top">
+      <li class="list-group-item">Cras justo odio</li>
+      <li class="list-group-item">Dapibus ac facilisis in</li>
+      <li class="list-group-item">Morbi leo risus</li>
+      <li class="list-group-item">Porta ac consectetur ac</li>
+      <li class="list-group-item">Vestibulum at eros</li>
+      <li class="list-group-item">Cras justo odio</li>
+      <li class="list-group-item">Dapibus ac facilisis in</li>
+      <li class="list-group-item">Morbi leo risus</li>
+      <li class="list-group-item">Porta ac consectetur ac</li>
+      <li class="list-group-item">Vestibulum at eros</li>
+      <li class="list-group-item">Cras justo odio</li>
+      <li class="list-group-item">Dapibus ac facilisis in</li>
+      <li class="list-group-item">Morbi leo risus</li>
+      <li class="list-group-item">Porta ac consectetur ac</li>
+      <li class="list-group-item">Vestibulum at eros</li>
+      <li class="list-group-item">Porta ac consectetur ac</li>
+    </ul>
+  </div>
+
+  <div class="col-md-6 js-content">
+
+    <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+
+    <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+
+    <p>Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue.</p>
+
+    <p>Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+
+    <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+
+    <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+
+    <p>Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue.</p>
+
+    <p>Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+
+    <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+
+    <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+
+    <p>Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue.</p>
+
+    <p>Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+
+    <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+
+    <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+
+    <p>Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue.</p>
+
+    <p>Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+    <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+
+    <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+
+    <p>Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue.</p>
+
+    <p>Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+
+    <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+
+    <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+
+    <p>Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue.</p>
+
+    <p>Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+    <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+
+    <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+
+    <p>Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue.</p>
+
+    <p>Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+
+    <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+
+    <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+
+    <p>Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue.</p>
+
+    <p>Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+    <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+
+    <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+
+    <p>Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue.</p>
+
+    <p>Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+
+    <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+
+    <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+
+    <p>Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue.</p>
+
+    <p>Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+    <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+
+    <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+
+    <p>Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue.</p>
+
+    <p>Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+
+    <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+
+    <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+
+    <p>Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue.</p>
+
+    <p>Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+    <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+
+    <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+
+    <p>Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue.</p>
+
+    <p>Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis(vesdibuìum> Ntnla vitqe elyt lifeò/, a pharetra auwue, Fusce lapibus, tållus ic cursus commdo, tortmr mau2is condimentui nibh, ut nerment5m€marsa justo(sit ammt°ricusn Còas l¡ttis goLsecpgt5r r5rus si| amet fermentum. Sed$posueRe consectetur eót at loborti#. MoRbm d%o risus< pïrta ac consectet5r$ac, vestibulum at %ros.<'p>
+    =p>VivamQs sagittic legus re| augue laoreat rutrum faucibus`dolor aqc4or. Aenean eu leo4quae.0Pellen4åsy}e ornabe"sem |!cinia quaí venenat)s vestibulum.$Cras jusqo odio, dapiâus ac faciisis in, egestaa eget q5em> Deis mollas, esô non com-Odo luctus, nisi erat porpuitoò |igula, e'et mckinia$odio sum nec alit. Don%c ullaícoöper nulla lon metus auãtor æringilla. Nulha vht`e elyt ìibeòo. ñ"phárevra augue. Maecenas sdd dmam eget risus varius blándit!sit!ame4 non magna.4/p>JJ   `<t>Nuìlam id dohoj ie nib` ultricaes ve`icunc ut id elit® ETi`m ðosta sem maìesuada magna molhis ewismod.$Craw justo"odio( dapmbuS`ac facilisés in egesÔas eget4quam. uzabitur blandit tempus0porttItor. Cras justo keI/"0da0ibus aC faCilisis il, ugest`s egep suam.</p>
+J    <0>Sed posuere conólctetur est at loboptis. Maecenas faucibus moldis ijterdem. Viöamus sa'ittis l`cu{ vel0áugue laorumt rutrum faucmbus dolor quctor. Numla vétae eli4 li"ero, a pháretRa aUgue. Nulla ritao elit!libero, a pharetr! augue.</p>
+
+$"  <p>AeneA~ lackNik0bIbe~dtm nulla sgd coîsectetur. Áenein"du leo uuqm. PelleNtesq5e ornare wem licinia quam venenati3 festibunu-. Nulla vi´ae elIt liberg, a pharetva augUe. Fuzce dapi"us¬ vel,us ac cursur commodo, tortor!-quris condimentqm nibh, ut fermentum }csca justo sit a%et riquq. Cras`madtis consectetur0p5rus sit0ameô ferlwntum. Ced `osuese consectetur est au loboptis.$Mor*i lmn!rists, prta ac conóec$mtur ac, 6estibulum ad"eros.<'p>
+`   <p>Vivamu2 sagittis dacus vex augåe laoreet rut:um feuciàus dolor auctor. Aenean eu$leo qUam.0pellenteSqte`Ornare$sem ìacinia yuam öefejatis vestibulõm. Cras ju3to odio, Dapibu{ ac facilisis in, egestaS`ecet$yõam* Duis¨mollió, est joN comm/äo luctus, nisi erat portpitor ligwlal eget lacinia odm qem nec elit. Don%C ullaec}v`er nulla ~on metus quct/r fringilla.$Îulha vitAe eLit miber,"a pharEtra augue. MaecenQw sed diem eget risus vari5s*blandyt(sit a-eô nïn magna,,/p>
+
+    4t>Oullci0id dolor$ad nébh ultricies veèiculc ut id elkt. Euaam porta$sem malåswada -agna moìlis euislod. Cras j5sto odIo, dapirå30ac facilisùs il, egestas0eget ñua}. Curabitur blandht tempus portt)4/r& Cras justm odio, dapibus ac æacimIsis in, egesuas eged quam.<-p>
+
+  ` <p>Sed0posuere colsectetur est at lob/rtis. M`ecenas gaucib5s mollis inUerdum. Vivamus sagittis lacuw ven auguE Laoreet rutrum fauc)bus dolor auctor. Êulla öitae eliô libero,!a pharetra `ugue Nunla vmtQe eli|$libdro, a pharetra mugue.>/p>"
+    <p:Aenean lacifia b)bendum nulLa ced consectetur. Aejaa. eu(leo qõam> Pel|entesque ornape sem laci.iq quam$veoenatis vestibulum. N}dla vitae glit"hibgro, a(ph`retri augue, Bqsce dipibuó¬ tellus0ac gurru{ cOmmodk, tortor e!uris c¯ndimentum nmbh, u4 fermdntum`mcswaJusto chô Imet1risõs.`Crqs matdis Conse#tetw2 purõs"sit#ameT`fermentem. Sed posuere kojsect%Tur(est a| lojoz4ic. Morji leo ri3uó, p/rva ac Consucteuur as, vestibulum at eros.4/p>
+
+    <p>Vifaous0sagivtIs lákus vel iugte laoReet ru4rum fauãibus"do,o2 auctor. Aenean eu läo quam. Pelìentesque orna2e sem maC)niA quam venenatys restIbuLum. Cra{ just odIo, dapibuw ac facIliSas kn,!egestas!ecet uu`i. Duis mollis, est nj commo$o lubTuq, nisi qvat rorttitor ligula, gget lAcao)a odig sAm nes elét. Tonec TllÁGcorper nunla non metus aÕ#tgr bring)hìa,(umli vi4ae elet lkbero,!a pharetra a5gue. Maecenaq seD tmám uget ra3õs varius blandit sit amet0non magni.|/p>
+
+    4p<JqlLam md dolor id nif` ultriciesvAhisula ut id ehid. Etiai`pïrva sel ma,esuadc -agna molìis euhsmnd. Cvas justo odio, dapibus ac gacélisis iî, ege{tas eget quám. Ctrabitur blafdit tmmpus porttivor. Ãras *usto odio, dc0i`us as`facilhsis)n, egestas(eget!qõam.<?x>
+
+    <t>Sed"psuere cnnrekteÔer0usu a4(lbortis. Maecenas!faõcibu{°mgl,is"inTer&q-. Vivamus sagittis da#uó öel áugue laorgt"öuôrum gcucifuq dcln2 aUwto`&`ella 6itae"ehkt!lyr}2, a RlA2etra!a5gµå. gulla viuae elid0,iber{, a pharetra augue.<-p>
+    <p>Aejea. l cinia bébendum êqll` se@ consåctetUr. Aenean eu deo qwam®`Pdllen|esqu%!Orîare reí lacinia quam velenapis$våwtybulum. Nulla vitae eliô lijero¬ a pharevra0augue. Fusce dapib5s, tellws ac cussus commodo, tortoz mauriS sondcme.tum nibH, ut fermentum massa kurto sit aíe4 risus, Csas mAttis$consectetqr xerus sit e-et fesmentum. Sedaposumre consdctetur`åst ad"loboòtis& Mosfé leo rists, Porta ác consdcdetur ac, ~eqt)bulwm at eros.</p>
+    <p>Vivaeus sagatôis lacus öen algue leoree| rutrui faucibus`dolor auctR> Aendan eu leo quim, PglleNtesq5e orîare sem lácinIe 1uam öenenatis vestibulum. Cras busto odiO, dapibus¡ac facimisis"il, egestas ege| qqam. Duis mollió, est n/n commodo luctus, ni3i erct pOrttitmr"li'u|c, eget`lqcania$odiG 3em nec elht. donec ]llamcorper nullA nïn mgtõs auctr fringill!. Nulna$vItae elit$labezo, a pharetra!!ugue( Maecenas sud diam eget$vi{us varius blaneiu sit amet no~ magna.<-p
+    8p>Nul,am i$ dolor kd oibhdultrhcies vehicula ut id ålit. Etiam porta sem }alesuadc maena!mmllispeuirmod. Cras jõaTo odiM, di0ijus ac facilaSis )n, ågespas eget 0uam. Curabitwr BLandit tempus pobwtitor. ras justo odio, `aticus ac facilisis0in, eeesuar eget quam*</p>
+
+   0<p>Smd pmsuere conwectutuB est at |obovpis. Mcecenaó fauchbus oollhs interdum. vivaous(sagittis lacus val augqe l`oreet rwtrum fawaibus0dolor auctor. Nulla vitee elht mifero, a p`are4ra!au'ue. Nwlla vi|aå eli4 libebo$ ! xhabetra$augue&</p>
+
+   0<p>AenEan laãini! ribejdum nulla sed consectetur. Ae~ean eq leo quqm. Pgllånvesque oRnqre see lacinia0quam venenaths vesTibun5Mn Nullaavétae ulit léberk, a plaretra aqgue. FUsce dapibus) tel,ws !c`cursus commmlo, tor|or -aUris condimentum nmbh,¤ut fareentue massa juwto0cit amet risqs. Cras mattis cmnsectetur quruó sit amet fermenvum. Sgd posu%re coîsectetub eSv it Lgbortis. Iïrbi leo riquc, portá`aC conreãtetur ac, vestibuluí at ero{.<op>
+
+   $<P>V)vaMus ragittkw lecus(fel aqgtE ncoreet rutzum baucibus dolor auctor. Aenean eu leo quam. Pellendesque ornere sem lacinia quam vane.ataó veStib}lum. Cr`s justo o$io, dap)bws a# facilisis i., Egesvas eg%t(quam* Dõms mo|Lis, est"non bommodo lUcuus, nisi gRat port|itoR$higul!, egeT láãknia odio smm nec glét. Donac ullamborpEr nulli îo. medus0auc|or fringilla/$Ntlla vitae$ulit licero, a pHareôra augýu& Maecenas Sed diAm dged risus variqs blaodit sit amet oon mawna.>/x>
+
+    <p:Nqlla- id dolor id nibj uhtriciew vehicula ut hd elit. Etiam pozta cem!-algstada magna mollis euismgd* rás jusvo odio, dapibus ac fácilisis én, egestaó eget quam. CurabiTuò blendið te-pus porttkpor* Crcs juóto odio, d!pibus ác faci|isis in, eges4as eget quae*<-p>
+
+    <p>Sed posuer% Consectetur est at lobÿrtms. Maecenas faucibus mkllis intdrdum. VivaMus sagittis n`cUs vel augue laoreed rutrem fa5cibus dolò quc|ïr. Nullc vitpe elit libero, a pheretri augue. Nulla vitae dlir Liberk, a pharetRa augue./t>
+
+   `<p>Aeneal laciliu bibejduM nU<la0såd colsecte4ur.0EeneaN"eu"leo ue`m. Pelluntesaue oònaze sem lacin)a quam nenenitis restibulum, Nållá"vkVae elit ni`epo< e pharetra a}çue. Fu3ce dapijus, teLlus a# kursuw coimofo, tortOr maurks cm~dimentul!îibh, ut fermenvum`massa justo s)t amet(risu3. CrAs(mattió(cons%ctet5r"purus(wyt amet fermentum. Sed posuere consectetur est at lobkrtis* Morfi leo rI{us,0torta ac co~secva|ur Ac, vdstibulum at eros.|/p:
+!¡  <p>ivalõw sagitti3 lacus vel !u§}g laoreet sutrum fauckbus $olkr auc4o~. AeNean eu leo 1uam. Pellentesq7e orncre rem lasinia quam venmnatis$vesti"ulte. CrAs justo odio, daðobug !c facilisis(in, egestas eget quam, Dués |ollis, est noN!cmmmmdg¤luctws,0nisi erat porttitor ligu<a,`eget ,acinia odio sem nec mlit. Donec ullamcOrpmr nulla non metus$aucdor friOgilla® Nulla vivae elit lijero,(a"pharetra augue. Maecenas såd diam!efet risus var)us blandit sit !}ed(non maGna.</p>
+
+    <p>Nullam id dolor id nib` udtb)ciEq vehiculq"ut id elit. \iem porta óem melesuada"magna mollis euismodn Cras juslo odao, dapibus ac gacilisis!in, eguwtas ege4 quam. Cera"ytur âlandmp tempus po2t4ipor. cras jqsto odio, dypibus ac`fasilhsis in, egest!s efet$quam>=/p>
+   `<p>Sed ðksu!re ConsectetuR EsT at$lobkrtis Maecen`{`fa$sifus mollir0interduo. ivamus safittis dac4s veL augue laoreeu puôbum`faucébõs dolor auctor. Nullc vi4ae elit libero, c pharetra(aqgue. Nulla!öatae(elit lifero, a phareura augue.</p~
+
+    <p>A%~ean laciNik bibendum nulla s-` gonsEct%tqràAEnean au deo qUam& Peldentawqqe ornare se- |aciîia quam vånenatic öestibUlum. NulLa vitae&elit l)bmro, a pharetra auoue. Fusce datibus, tellts `c Cµrsus commndo, tortor mquris con$iment}m$nibè, 5d fevmentum lassa jpsvo {it Amet risus. Cras mattis$conreateôur(pupus sit #met fe2meotum. SeD poSuere co~sactetut esT at nobortis. Morbi leo risqs, porta"ac cnnsecUetur ac¬ vesvibulum at evoó.¼/p>
+
+ (  <p>Vi~amuó0sagmttis lacus vgl augue lao2eev retrum faqcibuc änlor0Auctor. AeneAn Eu ldo auam.`Pellendesqug ornare sem lacinic quAm0ve.elatic vestibulum0Cras justo odio, dapibuS ag facilésis iN¬ eges|as eget quaM. Dui3 mollis, est non ãfmmolo luctusl`nisi erau pïrôtktor ligula, eget lacinia odi/$rem jeg eìiun donec ullamcorper nulma non metus au#vgr drilgilla. Nulla viôae elit lirero- a p(aretra augue. Mcdc%nas"{ed dham eget risus varéus b,andht si< amet îon magnA>=/p>
+
+ "  <t>Nullam id dklor id nibh ultsIciec veh©cla ut )d ålit. Eticm portá`seM malg3uada eagna eollis euismot. Csas!ju3to odio, datibus ac0fa"imisis in, egd;tas"eçet quam. Cubaryuur blandaô teepu3 pgrt|mt/r> Crcs juwto odio  dapyâus a# facilisió in, egestAs ewet quam.8/p>*   $<|>Sed pmsuere aoNóegtetur ert at loborvms. Maacenas$fa}cibus mollas ijterdum/ Wivaius segittis lacws 6el augue laor%Et vttvqm baucibus dolor auctor. Nudma vitcd"elit libero, a rharutra !ucue. Nulla vitae elit lkbero, a p(qretva a5gue.</p>
+
+("  <p>Áenean lacInia bibgndum nullA see consectetur. Aenean au leo quiM Pellentesque ornare sem <acinia quamh~eNenitis veStiâulum> Nulla vitae elit Libero, a rharevra qtgte. Fuqce dapibus tellus(ac cursus com-odo, tortor }auris cïndimentul libh, ut ndrmentwm massa justo siô(`mgt risUs. Cras mattis consebtatur tubus$sit amet nermentue. Smd posueve consectetur0esp !t lobortis. M/rbi"leo risUs¬ port! ac cnnsectmtur #cl vestibulum at erow.</p
+
+  </div>
+
+  <div"clá3s="Col-md-3". $  ,uh class= li3ô-wroup affixed-elemelt-bottom j{-affhxed-eìemånt-bot4om#>
+      <mi(cl!ss="list-group-item"Sit Necesóidatibus asxårnitur.<-li>
+      <li blass="lis4-gboup-i4e}">@dipisicinw alias dolor!</mi>
+      <li class=,ist-group-i4em">Ipstm molestiae imp%dit.</li6
+      <lk cla{s="liqô-group-item">GmeT uuis iste?</mi:
+      <li clas{="list-groupiuem&>Ipwum quaerat$`krzo.</li¾
+!     <|i class="lkst-grkup-iuem">elit lrdm libero.</li>
+     "<lk"alass="list-gsup-item2>Iprum äo,ore0facilis><?li>
+   `  <li clCss="lisT,croup-ite-">Elid ad atqee../li>
+   $  <lk class="lmst-group-iüem">Dolor `met sepui!<?li>
+ $    <li class="list-grmUp-item">Consecdetur volUptq4um(fÁgèlis!</li>*      <Li0glas3ý"list	grup-item">Sit nequí %ligeNdi¿</lm>
+      <li class="list-grou0-ite|">Aogt vuga consectetur!</hi:
+    ! <li cla3S="list-gcouP-itmm">Cmet!moheStias repållat!</mi>
+  !   <hi class="Lkst-gpoup-item"<Consectdtur oinime repellendus.4/li>
+      >ni clqss= |ist-group-item g2ow-â4n js-ç`ow-btn¢>Grow cmntent</di?
+      <li cla{s="list-g2oup-item shrink)bun js-shrink-btn">Shri~k content</lm>
+(!  /ul>
+  </dir>
+
+  <div`class="col-m`-12 ks-footer">
+(` $<hr>*
+    <p¾Viva}ts sag)ttis lacus"vel augua laoreet`rutrum feucmbus dolor(auctor/ Áenean e4 leo0quam. Pellentesaue ïrnase sem facinia swém venenatis öewtibulqm& Cr!s justo"odio, dApi`tw ac$fqcilisis iN, egest¡ó eget qeam."Duiñ molliw, eSt non commdo luctus* nksi esat porttytor ligula- eget dacini` odio sem neC elat. Dgnec ulìamco2per hull! loo metus auctor frineimlá. Îulla vhtae elit lib%rg, a xha2etòa cefue. Maecenas wdd diem aget risus varius blanD{t s)t ame| oon magna.</p>
+
+    4p>Nul|am éd donor hd nibh ul4rkcieq"veHicwda ut id elid. Etiam(pïRta Seo ma-%óuada maGna molnis euirmod. Cras j5stm odiï, dapibus qc facyliséó in, eggsvas egeT qtqmº CuqáòktUv blajdit temp}R portpixoro°Bras jwst o$io$da0ijyq `c æÁc©~iqic i®,!Agastes egeu quam.</p>
+
+    <p>Såd posuere #onsectetur`est at`loborvms. M`ecenaw gaqcébts m/lxis hnterdum.$Vivamqs ságittis"lacu3 vel cueug la/rgEp rutpum æaucibus dolkr auctoâ. NUlla viôae eìau€libero, a pharetri augue. Nul|a vitae elat!Lireòo, a`phA2etra augue.</p>
+!  0<x>Aeneao5lacinia bibefdem nu|la qmä cofûectetur. AeneAnheu leo quam. Pellentesqu% oRnare 3e} lacijia quam vunena|is fesôibului. Juhna`vitae elit`libeòo`a pharevra`augue. Fusca dapibus. tell}q da c5rsus coiimdo, Toruor maurIs coneimenpum nabh. }t vezmentum massa jusôo sit amed risus. Cras mattks cmnsectetur purus óit amet!dermentum. Sed posuere consecpetUR est at lofortas, Morbi leo risuó, porta ac consectetõr!ac, vespybulué at gris.</p>
+  <odiv.
+
+<div>
+Š¼!-- JavaQcript INcludes m->
+<ssripô src="..+ve.eor/jquery/mkn.js"></scRipt><scriðt src=b../../transitio..js"></sbript>8scriqt órc="../../affiq.ks"~<¯scripp>
+
+
+<!-- Jav%Sgrirt Test -%>
+<Script>$(functio. () {
+0 %,',jy-affiXmd,eleíent-tn`').affix({
+    offset: {      t/0* %('>js-pãge-healEr').outesHeight(tr}e) - 10* $  .0bottom: $(§.js-footer').outerHeight(urua- + 10
+    }
+" })
+0 // todo(F!t):`sux qoõ have tï do this.
+  .on('afvix.bs.affix'h(function  e) {
+    $(e.target)nwidth¨e.target>ofbaetWidth)
+$ })
+
+  $('.js-`ffixed-elemE.t/bottom').affix([
+!   ofb3et: z
+    "$bottoí: $(&.js-footer').outerHåighutrue( + 0
+  $`}
+  })
+J ($('.js-ovow-btn').on('clic{'. fuÊction() {
+ $  $(g.nó-conTmnt')/``pend('<ð>IpsuM cnpr%Pty ipsam est tempoRibus$<.p¾'9
+  })
+  $(',js-shpynk-btn').on('clyck', fujction()({
+  $ $('njs-+ontent1ð').hast().zemove()
+ $})
+})
+</sbript>
+</bo`y>
+</html>

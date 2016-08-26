@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+        <br>
+        <div class="col s12 l6 offset-l3">
+            <p class="text-center" align="center"><img src="../images/logo.png"></p>
+            <form method="post" ng-submit="login()" name="loginForm">
+                <div class="form-group">
+                    <input class="form-control input-lg" type="text" name="email" ng-model="user.email" placeholder="Email" style="text-indent:15px;background-color: #fff;-webkit-border-radius:2px; font-size:41pt; -moz-border-radius: 2px;border-radius: 2px;border:solid;border: 1px solid #26C6DA;width: 100%;height: 45px;font-size: 15pt;color: #003350;font-weight: 400;" required autofocus>
+                    <span class="ion-at form-control-feedback"></span>
+                </div>
+                <div class="form-group">
+                    <input class="form-control input-lg" type="password" name="password" ng-model="user.password" placeholder="Password" style="text-indent:15px;background-color: #fff;-webkit-border-radius:2px; font-size:41pt; -moz-border-radius: 2px;border-radius: 2px;border: 1px solid #26C6DA;width: 100%;height: 45px;font-size: 15pt;color: #003350;font-weight: 400;" required>
+                    <span class="ion-key form-control-feedback"></span>
+                </div>
+                <p><a href="#/signup">Forgot Password</a></p>
+
+                <div class="form-group">
+                    <md-button class="md-raised cyan" type="submit" ng-disabled="loginForm.$invalid" style="margin-right:inherit;margin-left:inherit;width:100%;height:45px;margin-top: inherit;">Login</md-button>
+                </div>
+                <br/>
+                <div class="form-group">
+                    <p style="text-align: center;">Don't have an account yet? <a href="#/signup">Sign up</a></p>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>

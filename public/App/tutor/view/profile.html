@@ -1,0 +1,104 @@
+<div ng-controller="profileController">
+    <div class="cyan lighten-2">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m2 l2" align="center"><img  src="../images/prof_img.png" style="margin-top: 10px;">
+            </div>
+            <div class="col s12 m10 l10"><h4 class="header" style="margin-bottom: 0px;">{{ProfileInfo.first_name}} {{ProfileInfo.last_name}}</h4><h6 style="margin-bottom:auto;">{{ProfileInfo.area.city.city_name}}</h6></div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="container">
+
+        <div class="row">
+            <!--Starting of SideBar-->
+                <div class="col s12 m3 l3" align="center">
+                    <div class="red card">
+
+                        <img  src="../images/drawing.png" style="margin-top: 10px;">
+                        <br>
+                    </div>
+                    <div class="teal white-text card">
+                        <br>
+                        Message {{User}}
+                        <br>
+                        <a ng-click="search()" class="btn waves-effect waves-teal"style="margin-top:10px;">Contact</a>
+                        <br><br>
+                        Shortlist Me to find me again easily.
+                        <br>
+                        <a ng-click="search()" class="btn btn-flat"style="margin-top:10px;">Search</a>
+
+                    </div>
+
+                </div>
+            <!--End of Sidebar-->
+            <!--Main Contents-->
+                <div class="col s12 m9 l9 " style="margin-top: 0px;border-radius: 0px 0px 5px 5px;">
+                    <!--About-->
+                    <div class="row">
+                        <div class="col s12 m8 l8">
+                            <table class="responsive-table bordered">
+                                <tr>
+                                    <td>Account Type</td>
+                                    <td>Tutor</td>
+                                </tr>
+                                <tr>
+                                    <td>Location</td>
+                                    <td><b>{{ProfileInfo.area.area_name}}</b>, {{ProfileInfo.area.city.city_name}}, {{ProfileInfo.area.city.state.state_name}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Member Since</td>
+                                    <td>{{ProfileInfo.unix_date*1000 | date:'MM/dd/yyyy h:mma'}}</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col s12 m4 l4 card">
+                            <h5>Verification</h5>
+                            <hr>
+                            <ul>
+                                <li>Email<span class="badge"></span></li>
+                                <li>Phone<span class="badge">1</span></li>
+                                <li>Identity Card<span class="badge">1</span></li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                    <!--End of About-->
+
+                    <!--Subjects-->
+                       <div class="row">
+                            <div class="col s12">
+                               <h5>Subjects</h5>
+                            </div>
+                       </div>
+
+                        <div class="row">
+                            <div class="col s2" ng-repeat="Subject in Subjects">
+                                <div class="md-whiteframe-1dp">
+                                <p>{{Subject.subject_name}}</p>
+                                <p>{{Subject.description}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    <!--End of Subjects-->
+                    <div class="row"align="center">
+                        <a id="loadMore" class="waves-effect waves-teal btn-flat" ng-click="loadMore()">Load More</a>
+                    </div>
+                    <!--End of Subject-->
+                </div>
+            </div>
+            <!--End of Main Contents-->
+        </div>
+</div>
+</div>
+<script>
+    $(document).ready(function(){
+        $('.collapsible').collapsible({
+            accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+        });
+    });
+
+</script>
