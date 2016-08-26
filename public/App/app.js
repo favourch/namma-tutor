@@ -4,5 +4,10 @@ angular.module('myApp', [
   'ngRoute',
   'ngResource',
   'ngMessages',
-  'ngMaterial'
+  'myApp.Search',
+  'myApp.Profile',
+  'myApp.Service',
+  'myApp.Route',
+  'ngMaterial',
+  'satellizer'
 ]);

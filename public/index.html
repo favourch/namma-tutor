@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Namma Tutor</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Stylesheets -->
+<link rel="stylesheet" type="text/css" href="bower_components/materialize/dist/css/materialize.min.css">
+<link rel="stylesheet" type="text/css" href="bower_components/angular-loading-bar/build/loading-bar.min.css">
+<link rel="stylesheet" type="text/css" href="bower_components/angular-material/angular-material.min.css">
+<link rel="stylesheet" type="text/css" href="bower_components/angular-rangeSlider/angular.rangeSlider.css">
+<link rel="stylesheet" type="text/css" href="bower_components/angular-toastr/dist/angular-toastr.min.css">
+
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+<!-- Scripts  -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/satellizer/satellizer.min.js"></script>
+<script src="bower_components/materialize/dist/js/materialize.min.js"></script>
+<script src="bower_components/angular-route/angular-route.min.js"></script>
+<script src="bower_components/angular-animate/angular-animate.min.js"></script>
+<script src="bower_components/angular-loading-bar/build/loading-bar.min.js"></script>
+<script src="bower_components/angular-messages/angular-messages.min.js"></script>
+<script src="bower_components/angular-material/angular-material.min.js"></script>
+<script src="bower_components/angular-aria/angular-aria.min.js"></script>
+<script src="bower_components/angular-rangeSlider/angular.rangeSlider.js"></script>
+<script src="bower_components/angular-toastr/dist/angular-toastr.tpls.min.js"></script>
+<script src="bower_components/angular-resource/angular-resource.min.js"></script>
+
+<script src="js/angular-load-more/load-more.js"></script>
+
+
+</head>
+<body style="background-color: #FCFCFC;">
+<header>
+    <div class="navbar navbar-fixed" ng-controller="NavbarCtrl">
+        <nav id="nav_f" class="cyan lighten-1" role="navigation">
+            <div class="container">
+                <div class="nav-wrapper">
+
+                    <a href="#" id="logo-container" class="brand-logo"><img src="../images/logo.png"></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li ng-class="{active: isActive('/search')}"><a href="#/search">Search</a></li>
+                    </ul>
+
+                    <ul ng-if="!isAuthenticated()" class="right hide-on-med-and-down">
+                        <li ng-class="{active: isActive('/login')}"><a href="#/login">Login</a></li>
+                        <li ng-class="{active: isActive('/signup')}"><a href="#/signup">Sign up</a></li>
+
+                    </ul>
+
+
+                    <ul ng-if="isAuthenticated()" class="right hide-on-med-and-down">
+                        <ul id="dropdown1" class="dropdown-content">
+                            <li><a href="#/profile">Profile</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#/logout">Logout</a></li>
+                        </ul>
+                        <li><a class="dropdown-button" data-activates="dropdown1">Me</a></li>
+                    </ul>
+
+                    <ul id="nav-mobile" class="side-nav">
+                        <li ng-class="{active: isActive('/search')}"><a href="#/search">Search</a></li>
+                    </ul>
+
+                    <a href="#" data-activates="nav-mobile" class="button-collapse black-text"><i class="mdi-navigation-menu"></i></a>
+                </div>
+            </div>
+            <ul id="slide-out" class="side-nav">
+                <li><a href="#!">First Sidebar Link</a></li>
+                <li><a href="#!">Second Sidebar Link</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+<main>
+<div ng-view></div>
+</main>
+
+<footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l4 s12">
+            <h5 class="white-text">Help Materialize Grow</h5>
+            <p class="grey-text text-lighten-4">We hope you have enjoyed using Materialize!</p>
+            <form id="paypal-donate" action="" method="post" target="_top">
+
+<button class="btn waves-effect waves-light red lighten-3" type="submit" name="action" alt="PayPal - The safer, easier way to pay online!">Donate Now
+</button>
+</form>
+
+          </div>
+          <div class="col l4 s12">
+            <h5 class="white-text">Join the Discussion</h5>
+            <p class="grey-text text-lighten-4">We have a Gitter</p>
+            <a class="btn waves-effect waves-light red lighten-3" target="_blank" href="">Chat</a>
+          </div>
+          <div class="col l4 s12" style="overflow: hidden;">
+            <h5 class="white-text">Connect</h5>
+            <br>
+           <br>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © 2014-2015 Materialize, All rights reserved.
+        <a class="grey-text text-lighten-4 right" href="#">MIT License</a>
+        </div>
+      </div>
+    </footer>
+<script src="app/app.js"></script>
+<!--Directives-->
+<script src="app/directives/passwordStrength.js"></script>
+<script src="app/directives/passwordMatch.js"></script>
+
+<!--Controller-->
+<script src="app/controller/search.js"></script>
+<script src="app/controller/profile.js"></script>
+ <!--Authentication-->
+<script src="app/controller/Auth/login.js"></script>
+<script src="app/controller/Auth/logout.js"></script>
+<script src="app/controller/Auth/signup.js"></script>
+
+<!-- Services -->
+<script src="app/service/account.js"></script>
+<script src="app/service/navbar.js"></script>
+<script src="app/service/route.js"></script>
+<script src="app/service/service.js"></script>
+
+
+<script type="text/javascript">
+      $('.button-collapse').sideNav({
+      menuWidth: 300, // Default is 240
+      edge: 'left', // Choose the horizontal origin
+      closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+    }
+  );
+
+</script>
+
+
+</body>
+
+</html>
