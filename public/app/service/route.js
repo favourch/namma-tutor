@@ -36,6 +36,12 @@ angular.module('myApp.Route', [])
         {
             templateUrl: 'app/view/search.html',
             controller: 'TypeHeadCtrl'
+        })
+
+        .when('/license',
+        {
+            templateUrl: 'app/view/static-contents/license.html',
+            controller: 'TypeHeadCtrl'
         });
         
         function skipIfLoggedIn($q, $auth) {
