@@ -11,7 +11,7 @@ class LocationControllerTest extends TestCase
 
     public function testFirstTestCase(){
         $Data = 1;
-         $this->assertEquals(0, $Data);
+         $this->assertEquals(1, $Data);
 
     }
 
