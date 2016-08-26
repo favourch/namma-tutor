@@ -1,0 +1,30 @@
+{
+  "name": "NammaTutor",
+  "homepage": "https://github.com/princealikhan/namma-tutor",
+  "authors": [
+    "Prince Ali Khan <princealikhan08@gmail.com>"
+  ],
+  "description": "Teachers App",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-loader": "~1.4.0",
+    "angular-material": "~0.11.4",
+    "angular-mocks": "~1.4.0",
+    "angular-route": "~1.4.0",
+    "angular-loading-bar":"~0.8.0",
+
+    "materialize": "~0.97.1",
+    "angular-payments": "*",
+    "html5-boilerplate": "~5.2.0",
+    "satellizer": "^0.11.0"
+  }
+}

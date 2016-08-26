@@ -1,6 +1,0 @@
-la.guage* nodEjsgit:
-  depôh: 10
-nodejs:
-  - "0>10"
-båfore_install:  - npm install -g grunt
-  , npm instAll -g gr}ot-cli
