@@ -36,6 +36,7 @@
 
 <script src="js/angular-load-more/load-more.js"></script>
 
+<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" integrity="sha384-Wrgq82RsEean5tP3NK3zWAemiNEXofJsTwTyHmNb/iL3dP/sZJ4+7sOld1uqYJtE" crossorigin="anonymous">
 
 </head>
 <body style="background-color: #FCFCFC;">
@@ -45,7 +46,7 @@
             <div class="container">
                 <div class="nav-wrapper">
 
-                    <a href="#" id="logo-container" class="brand-logo"><img src="../images/logo.png"></a>
+                    <a href="#" id="logo-container" class="brand-logo"><img style="height: 50px;margin-top: 5px;" src="../images/logo.png"></a>
                     <ul class="right hide-on-med-and-down">
                         <li ng-class="{active: isActive('/search')}"><a href="#/search">Search</a></li>
                     </ul>
@@ -87,37 +88,40 @@
 </main>
 
 <footer class="page-footer">
+   <div class="container">
+      <div class="row">
+         <div class="col l4 s12">
+            <h5 class="white-text">Namma Tutor</h5>
+            <p class="grey-text text-lighten-4">
+              Made with <i class="fa fa-heart" aria-hidden="true"></i> in Chennai
+            </p>
+         </div>
+         <div class="col l4 s12">
+            <h5 class="white-text">Find Me on.</h5>
+            <p class="grey-text text-lighten-4">
+              <div class="list-group">
+                <a class="list-group-item" href="https://facebook.com/princealikhan" target="_blank" style="color:white">
+                  <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                </a>
+                <a class="list-group-item" href="https://twitter.com/princeprofile" target="_blank" style="color:white">
+                  <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                </a>
+                <a class="list-group-item" href="https://github.com/princealikhan" target="_blank" style="color:white">
+                  <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+              </div>
+            </p>
+         </div>
+      </div>
+   </div>
+   <div class="footer-copyright">
       <div class="container">
-        <div class="row">
-          <div class="col l4 s12">
-            <h5 class="white-text">Help Materialize Grow</h5>
-            <p class="grey-text text-lighten-4">We hope you have enjoyed using Materialize!</p>
-            <form id="paypal-donate" action="" method="post" target="_top">
-
-<button class="btn waves-effect waves-light red lighten-3" type="submit" name="action" alt="PayPal - The safer, easier way to pay online!">Donate Now
-</button>
-</form>
-
-          </div>
-          <div class="col l4 s12">
-            <h5 class="white-text">Join the Discussion</h5>
-            <p class="grey-text text-lighten-4">We have a Gitter</p>
-            <a class="btn waves-effect waves-light red lighten-3" target="_blank" href="">Chat</a>
-          </div>
-          <div class="col l4 s12" style="overflow: hidden;">
-            <h5 class="white-text">Connect</h5>
-            <br>
-           <br>
-          </div>
-        </div>
+         Developed By <span style="font-weight:900;">Prince Ali Khan</span>
+         <a class="grey-text text-lighten-4 right" href="#/license">GNU License</a>
       </div>
-      <div class="footer-copyright">
-        <div class="container">
-        © 2014-2015 Materialize, All rights reserved.
-        <a class="grey-text text-lighten-4 right" href="#">MIT License</a>
-        </div>
-      </div>
-    </footer>
+   </div>
+</footer>
+
 <script src="app/app.js"></script>
 <!--Directives-->
 <script src="app/directives/passwordStrength.js"></script>

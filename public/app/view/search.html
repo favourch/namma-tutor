@@ -64,7 +64,7 @@
                           </md-select>                      </div>
 
                       <div class="star" style="margin-left:20px; margin-right:20px;" ng-if="search_param.CityID">
-                          <md-select placeholder="Choose City" md-on-open="getArea({{search_param.CityID}})" class="browser-default" ng-model="search_param.AreaID" required>
+                          <md-select placeholder="Choose Area" md-on-open="getArea({{search_param.CityID}})" class="browser-default" ng-model="search_param.AreaID" required>
                               <md-option ng-repeat="value in AreaList" value="{{value.id}}">{{value.area_name}}</md-option>
                           </md-select>
                       </div>
@@ -76,7 +76,7 @@
 
                       </div>
                       <div class="star" style="margin-left:20px; margin-right:20px;" align="center">
-                      <a ng-click="AdvanceSearch()" class="waves-effect waves-teal btn-flat"style="margin-top:10px;">Refine</a>
+                      <a ng-click="AdvanceSearch()" class="waves-effect waves-teal btn-flat"style="margin-top:10px;margin-bottom:10px;">Refine</a>
                       </div>
                   </div>
                 </div>
@@ -94,7 +94,7 @@
                                     <div class="col s12 m4 l4">
                                         <div class="card md-whiteframe-1dp hoverable">
                                             <div class="card-image">
-                                                <img src="../images/pic.png">
+                                                <img src="../images/users/{{post.tutor_id}}.png">
                                                 <span class="card-title">{{post.first_name}} {{post.last_name}}</span>
                                             </div>
                                             <div class="card-content">

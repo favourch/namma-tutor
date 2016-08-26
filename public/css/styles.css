@@ -110,6 +110,15 @@
   animation: fadeOutDown 0.2s;
 }
 
+.avatar{
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  float: left;
+  overflow: hidden;
+  margin-right: 25px; 
+}
+
 @-webkit-keyframes zoomIn {
   0% {
     opacity: 0;

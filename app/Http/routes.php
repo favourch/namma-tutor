@@ -12,10 +12,7 @@
 */
 
 Route::get('/', function () {
-	echo 'holla';
     return File::get(public_path().'/index.html');
-
-    //return File::get(public_path().'/App/tutor/index.html');
 });
 
 /*Locatio APi's*/
