@@ -11,11 +11,11 @@ class LocationControllerTest extends TestCase
      *
      * @return void
      */
-    public function testListOfCity()
+    public function testListOfCityFailed()
     {
 
         $city = $this->call('GET','city');
 
-        $this->assertGreaterThan(0, count($city));
+        $this->assertEquals(0, count($city));
     }
 }
